@@ -2,67 +2,7 @@
     "PRB": 
         {
             "name": "Patrick Rothfuss' Blog",
-            "website": "None",
-            "rss_feed": "None"
-        },
-    "TC":
-        {
-            "name": "Trenches Comic",
-            "website": "None",
-            "rss feed": "None"
-        },
-    "CC":
-        {
-            "name": "Camp Comic",
-            "website": "None",
-            "rss feed": "None"
-        },
-    "GOB":
-        {
-            "name": "Goblins Comic",
-            "website": "None",
-            "rss feed": "None"
-        },
-    "LTB":
-        {
-            "name": "Lowering the Bar Blog",
-            "website": "None",
-            "rss feed": "None"
-        },
-    "PA":
-        {
-            "name": "Penny Arcade",
-            "website": "None",
-            "rss feed": "None"
-        },
-    "PEO":
-        {
-            "name": "Pricenomics",
-            "website": "None",
-            "rss feed": "None"
-        },
-    "XKCD":
-        {
-            "name": "XKCD Comic",
-            "website": "None",
-            "rss feed": "None"
-        },
-    "XKCDWI":
-        {
-            "name": "XKCD-What If Comic",
-            "website": "None",
-            "rss feed": "None"
-        },
-    "OOTS":
-        {
-            "name": "Order of the Stick Comic",
-            "website": "None",
-            "rss feed": "None"
-        },
-    "PHT": 
-        {
-            "name": "Popehat",
-            "website": "None",
-            "rss feed": "None"
+            "website": "http://blog.patrickrothfuss.com/",
+            "rss_feed": "http://feeds.feedburner.com/PatrickRothfuss?format=xml"
         }
 }
