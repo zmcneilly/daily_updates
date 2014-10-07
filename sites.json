@@ -1,68 +1,57 @@
 {
-    "PRB": 
-        {
-            "name": "Patrick Rothfuss' Blog",
-            "website": "http://blog.patrickrothfuss.com/",
-            "rss_feed": "http://feeds.feedburner.com/PatrickRothfuss?format=xml"
-        },
-    "TC":
-        {
-            "name": "Trenches Comic",
-            "website": "http://trenchescomic.com/",
-            "rss feed": "http://trenchescomic.com/feed"
-        },
-    "CC":
-        {
-            "name": "Camp Comic",
-            "website": "http://campcomic.com/",
-            "rss feed": "http://campcomic.com/rss"
-        },
-    "GOB":
-        {
-            "name": "Goblins Comic",
-            "website": "http://www.goblinscomic.org/",
-            "rss feed": "http://www.goblinscomic.org/feed/"
-        },
-    "LTB":
-        {
-            "name": "Lowering the Bar Blog",
-            "website": "http://www.loweringthebar.net/",
-            "rss feed": "http://www.loweringthebar.net/atom.xml"
-        },
-    "PA":
-        {
-            "name": "Penny Arcade",
-            "website": "http://penny-arcade.com/",
-            "rss feed": "http://penny-arcade.com/feed"
-        },
-    "PEO":
-        {
-            "name": "Pricenomics",
-            "website": "http://priceonomics.com/",
-            "rss feed": "http://priceonomics.com/latest.rss"
-        },
-    "XKCD":
-        {
-            "name": "XKCD Comic",
-            "website": "http://xkcd.com/",
-            "rss feed": "http://xkcd.com/atom.xml"
-        },
-    "XKCDWI":
-        {
-            "name": "XKCD-What If Comic",
-            "website": "http://what-if.xkcd.com/",
-            "rss feed": "http://what-if.xkcd.com/feed.atom"
-        },
-    "OOTS":
-        {
-            "name": "Order of the Stick Comic",
-            "website": "http://www.giantitp.com/",
-            "rss feed": "http://www.giantitp.com/comics/oots.rss"
-        },
-    "PHT": 
-        {
-            "name": "Popehat",
-            "website": "http://www.popehat.com/",
-            "rss feed": "http://feeds.feedburner.com/Popehat?format=xml"
-        }
+    "CC": {
+        "name": "Camp Comic",
+        "rss_feed": "http://campcomic.com/rss",
+        "website": "http://campcomic.com/"
+    },
+    "GOB": {
+        "name": "Goblins Comic",
+        "rss_feed": "http://www.goblinscomic.org/feed/",
+        "website": "http://www.goblinscomic.org/"
+    },
+    "LTB": {
+        "name": "Lowering the Bar Blog",
+        "rss_feed": "http://www.loweringthebar.net/atom.xml",
+        "website": "http://www.loweringthebar.net/"
+    },
+    "OOTS": {
+        "name": "Order of the Stick Comic",
+        "rss_feed": "http://www.giantitp.com/comics/oots.rss",
+        "website": "http://www.giantitp.com/"
+    },
+    "PA": {
+        "name": "Penny Arcade",
+        "rss_feed": "http://penny-arcade.com/feed",
+        "website": "http://penny-arcade.com/"
+    },
+    "PEO": {
+        "name": "Pricenomics",
+        "rss_feed": "http://priceonomics.com/latest.rss",
+        "website": "http://priceonomics.com/"
+    },
+    "PHT": {
+        "name": "Popehat",
+        "rss_feed": "http://feeds.feedburner.com/Popehat?format=xml",
+        "website": "http://www.popehat.com/"
+    },
+    "PRB": {
+        "name": "Patrick Rothfuss' Blog",
+        "rss_feed": "http://feeds.feedburner.com/PatrickRothfuss?format=xml",
+        "website": "http://blog.patrickrothfuss.com/"
+    },
+    "TC": {
+        "name": "Trenches Comic",
+        "rss_feed": "http://trenchescomic.com/feed",
+        "website": "http://trenchescomic.com/"
+    },
+    "XKCD": {
+        "name": "XKCD Comic",
+        "rss_feed": "http://xkcd.com/atom.xml",
+        "website": "http://xkcd.com/"
+    },
+    "XKCDWI": {
+        "name": "XKCD-What If Comic",
+        "rss_feed": "http://what-if.xkcd.com/feed.atom",
+        "website": "http://what-if.xkcd.com/"
+    }
 }
