@@ -8,61 +8,61 @@
     "TC":
         {
             "name": "Trenches Comic",
-            "website": "None",
-            "rss feed": "None"
+            "website": "http://trenchescomic.com/",
+            "rss feed": "http://trenchescomic.com/feed"
         },
     "CC":
         {
             "name": "Camp Comic",
-            "website": "None",
-            "rss feed": "None"
+            "website": "http://campcomic.com/",
+            "rss feed": "http://campcomic.com/rss"
         },
     "GOB":
         {
             "name": "Goblins Comic",
-            "website": "None",
-            "rss feed": "None"
+            "website": "http://www.goblinscomic.org/",
+            "rss feed": "http://www.goblinscomic.org/feed/"
         },
     "LTB":
         {
             "name": "Lowering the Bar Blog",
-            "website": "None",
-            "rss feed": "None"
+            "website": "http://www.loweringthebar.net/",
+            "rss feed": "http://www.loweringthebar.net/atom.xml"
         },
     "PA":
         {
             "name": "Penny Arcade",
-            "website": "None",
-            "rss feed": "None"
+            "website": "http://penny-arcade.com/",
+            "rss feed": "http://penny-arcade.com/feed"
         },
     "PEO":
         {
             "name": "Pricenomics",
-            "website": "None",
-            "rss feed": "None"
+            "website": "http://priceonomics.com/",
+            "rss feed": "http://priceonomics.com/latest.rss"
         },
     "XKCD":
         {
             "name": "XKCD Comic",
-            "website": "None",
-            "rss feed": "None"
+            "website": "http://xkcd.com/",
+            "rss feed": "http://xkcd.com/atom.xml"
         },
     "XKCDWI":
         {
             "name": "XKCD-What If Comic",
-            "website": "None",
-            "rss feed": "None"
+            "website": "http://what-if.xkcd.com/",
+            "rss feed": "http://what-if.xkcd.com/feed.atom"
         },
     "OOTS":
         {
             "name": "Order of the Stick Comic",
-            "website": "None",
-            "rss feed": "None"
+            "website": "http://www.giantitp.com/",
+            "rss feed": "http://www.giantitp.com/comics/oots.rss"
         },
     "PHT": 
         {
             "name": "Popehat",
-            "website": "None",
-            "rss feed": "None"
+            "website": "http://www.popehat.com/",
+            "rss feed": "http://feeds.feedburner.com/Popehat?format=xml"
         }
 }
