@@ -5,6 +5,7 @@ import smtplib
 from datetime import datetime, timedelta
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
+from os.path import realpath
 
 SENDER = "zach.mcneilly@gmail.com"
 SMTP = "smtp.gmail.com:587"
@@ -64,7 +65,7 @@ class EmailAlerts(object):
 
 def main():
     try:
-        json_file = open('sites.json', 'r')
+        json_file = open(realpath(__file__)+'/sites.json', 'r')
         sites = json.load(json_file)
         email = EmailAlerts(SENDER)
         json_file.close()
@@ -86,7 +87,7 @@ def main():
             email.add_notify(dict(sites[site]))
             sites[site]['last'] = datetime.now().strftime("%Y%m%dT%H:%M")
         sites[site]['md5'] = site_md5
-        json_file = open('sites.json', 'w')
+        json_file = open(realpath(__file__)+'/sites.json', 'w')
         json_file.write(json.dumps(sites, sort_keys=True,
                         indent=4, separators=(',', ': ')))
         json_file.close()
