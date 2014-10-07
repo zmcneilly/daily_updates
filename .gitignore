@@ -55,3 +55,4 @@ target/
 
 #VIM
 *.swp
+sites.json

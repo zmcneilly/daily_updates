@@ -49,8 +49,8 @@ class EmailAlerts(object):
                 'Subject: Daily Updates\n\n')
 
         for site in self.notifications:
-            text += "{} has been updated!\n\t{}".format(site['name'],
-                                                        site['website'])
+            text += "{} has been updated!\n\t{}\n".format(site['name'],
+                                                          site['website'])
         smtp = smtplib.SMTP(self.smtp)
         smtp.starttls()
         smtp.login(self.sender, self.password)
@@ -73,8 +73,12 @@ def main():
         print("See README for the format of the sites.json file")
         return 1
     for site in sites:
-        site_resp = urllib.request.urlopen(sites[site]['rss_feed'])
-        site_html = site_resp.read()
+        try:
+            site_resp = urllib.request.urlopen(sites[site]['rss_feed'])
+            site_html = site_resp.read()
+        except urllib.error.HTTPError:
+            print("Failed to retrieve: " + site)
+            continue
         site_md5 = hashlib.md5(site_html).hexdigest()
         if 'md5' in sites[site] and site_md5 == sites[site]['md5']:
             pass
