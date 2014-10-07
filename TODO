@@ -1,6 +1,4 @@
 I hate the structure of sites mapped out.
 
 - Get URL and RSS links for each entry into the sites.json
-- Write code to notify via email when there is a difference
 - Write code to do a diff between HTML files
-- Add 'Last notified' to sites
