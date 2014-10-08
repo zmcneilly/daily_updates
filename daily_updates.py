@@ -5,10 +5,11 @@ import smtplib
 from datetime import datetime, timedelta
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
-from os.path import realpath
+from os.path import realpath, dirname
 
 SENDER = "zach.mcneilly@gmail.com"
 SMTP = "smtp.gmail.com:587"
+NOTI_TIME = 1 # Time in hours between notifications
 # Add a variable "PASS" here with your gmail password
 # I.e. PASS = 'password'
 
@@ -34,7 +35,7 @@ class EmailAlerts(object):
         are viable for sending a notification.'''
         result = False
         for site in self.notifications:
-            cut_off = datetime.now() - timedelta(hours=23)
+            cut_off = datetime.now() - timedelta(hours=NOTI_TIME)
             if 'last' not in site or \
                 datetime.strptime(site['last'], "%Y%m%dT%H:%M") < cut_off:
                 result = True
@@ -65,7 +66,7 @@ class EmailAlerts(object):
 
 def main():
     try:
-        json_file = open(realpath(__file__)+'/sites.json', 'r')
+        json_file = open(dirname(realpath(__file__))+'/sites.json', 'r')
         sites = json.load(json_file)
         email = EmailAlerts(SENDER)
         json_file.close()
@@ -87,7 +88,7 @@ def main():
             email.add_notify(dict(sites[site]))
             sites[site]['last'] = datetime.now().strftime("%Y%m%dT%H:%M")
         sites[site]['md5'] = site_md5
-        json_file = open(realpath(__file__)+'/sites.json', 'w')
+        json_file = open(dirname(realpath(__file__))+'/sites.json', 'w')
         json_file.write(json.dumps(sites, sort_keys=True,
                         indent=4, separators=(',', ': ')))
         json_file.close()
