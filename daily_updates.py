@@ -9,7 +9,7 @@ from os.path import realpath, dirname
 
 SENDER = "zach.mcneilly@gmail.com"
 SMTP = "smtp.gmail.com:587"
-NOTI_TIME = 1 # Time in hours between notifications
+NOTI_TIME = 1  # Time in hours between notifications
 # Add a variable "PASS" here with your gmail password
 # I.e. PASS = 'password'
 
@@ -36,8 +36,8 @@ class EmailAlerts(object):
         result = False
         for site in self.notifications:
             cut_off = datetime.now() - timedelta(hours=NOTI_TIME)
-            if 'last' not in site or \
-                datetime.strptime(site['last'], "%Y%m%dT%H:%M") < cut_off:
+            last = datetime.strptime(site['last'], "%Y%m%dT%H:%M")
+            if 'last' not in site or last < cut_off:
                 result = True
             else:
                 self.notifications.remove(site)
@@ -46,7 +46,7 @@ class EmailAlerts(object):
     def send_notifications(self):
         '''This method will create an email and send it with links to the
         updated content.'''
-        text = ('From: {}\n'.format(self.sender) + 
+        text = ('From: {}\n'.format(self.sender) +
                 'To: {}\n'.format(self.recp) +
                 'Subject: Daily Updates\n\n')
 
@@ -59,10 +59,6 @@ class EmailAlerts(object):
         smtp.sendmail(self.sender, self.recp, text)
         smtp.quit()
 
-
-
-
-    
 
 def main():
     try:
